@@ -4,7 +4,7 @@ import exe.ex3.game.PacManAlgo;
 
 public class GameInfo {
     public static final String MY_ID = "331104323";
-    public static final int CASE_SCENARIO = 4;
+    public static final int CASE_SCENARIO = 3;
     public static final long RANDOM_SEED = 31;
     public static final boolean CYCLIC_MODE = true;
     public static final int DT = 50;
