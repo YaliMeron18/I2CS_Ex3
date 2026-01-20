@@ -12,7 +12,11 @@ public class Ex3Algo implements PacManAlgo {
 
     @Override
     public String getInfo() {
-        return "Friend's Logic Optimized for Level 3: Higher Green Priority & Safer Movement.";
+        return "Algorithm Modes: 1. Eat Pinks (Default/BFS), 2. Eat Ghosts (Power Pellet active + proximity), 3. Run from Ghosts (Danger proximity).\n" +
+                "Logic: Mode selection is distance-based (via Parameters.java). If a Power Pellet is active, Pacman pursues ghosts within range; " +
+                "otherwise, he defaults to nearest-point collection using BFS/allDistance mapping.\n" +
+                "Survival: Run mode evaluates moves using a weighted 'Danger Score' [1000 / (dist^2 + 1)]. " +
+                "Includes dead-end penalties (-5000), stutter prevention (+5 momentum bonus), and nearest-green weighting to prioritize survival routes.";
     }
 
     @Override
